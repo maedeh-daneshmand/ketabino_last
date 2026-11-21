@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #faf6f0; /* Parchment cream from color palette */
+  --foreground: #1c261e;
+  --font-vazirmatn: "Vazirmatn", sans-serif;
+}
+
+.dark {
+  --background: #0f1812;
+  --foreground: #f3ece0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-vazirmatn), sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+  direction: rtl;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Custom Vintage & Glass Utilities */
+.glass-card {
+  background: rgba(255, 255, 255, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  box-shadow: 0 10px 30px -5px rgba(30, 63, 32, 0.06);
+}
+
+.dark .glass-card {
+  background: rgba(22, 38, 25, 0.65);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.4);
+}
+
+.vintage-paper {
+  background-color: #faf6f0;
+  background-image: radial-gradient(#e4dacb 0.75px, transparent 0.75px);
+  background-size: 16px 16px;
+}
+
+.dark .vintage-paper {
+  background-color: #121c15;
+  background-image: radial-gradient(#1e3323 0.75px, transparent 0.75px);
+  background-size: 16px 16px;
+}
+
+/* Realistic 3D Book Spine & Shadows */
+.book-3d-wrapper {
+  perspective: 1200px;
+}
+
+.book-spine-standing {
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.35), inset 3px 0 6px rgba(255, 255, 255, 0.25), inset -3px 0 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.book-spine-standing:hover {
+  transform: translateY(-16px) scale(1.04) rotate(-2deg);
+  box-shadow: -8px 12px 20px rgba(0, 0, 0, 0.45), inset 3px 0 6px rgba(255, 255, 255, 0.4);
+  z-index: 20;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1ebd8;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background: #142018;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c7b9a5;
+  border-radius: 4px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #2d4833;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8947b;
+}
+
+/* Reader Themes */
+.reader-light {
+  background-color: #ffffff;
+  color: #1a1a1a;
+}
+
+.reader-sepia {
+  background-color: #f7f1e3;
+  color: #3b2e2a;
+}
+
+.reader-dark {
+  background-color: #18191a;
+  color: #e4e6eb;
+}
+
+.reader-emerald {
+  background-color: #0e1e12;
+  color: #d1e7d6;
+}

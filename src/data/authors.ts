@@ -1,0 +1,58 @@
+import { Author } from "@/types";
+
+export const AUTHORS: Author[] = [
+  {
+    id: "sadegh-hedayat",
+    name: "صادق هدایت",
+    originalName: "Sadegh Hedayat",
+    avatar: "https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&q=80&w=400",
+    bio: "از پیشگامان داستان‌نویسی نوین ایران و خالق رمان جاودانه بوف کور.",
+    booksCount: 14,
+    born: "۱۲۸۱ - تهران",
+  },
+  {
+    id: "dostoevsky",
+    name: "فئودور داستایفسکی",
+    originalName: "Fyodor Dostoevsky",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400",
+    bio: "نویسنده نامدار روس و کاشف پیچیده‌ترین اعماق روان و وجدان آدمی.",
+    booksCount: 18,
+    born: "۱۸۲۱ - مسکو",
+  },
+  {
+    id: "abbas-maroufi",
+    name: "عباس معروفی",
+    originalName: "Abbas Maroufi",
+    avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=400",
+    bio: "رمان‌نویس، شاعر و روزنامه‌نگار برجسته معاصر و خالق سمفونی مردگان.",
+    booksCount: 12,
+    born: "۱۳۳۶ - تهران",
+  },
+  {
+    id: "bozorg-alavi",
+    name: "بزرگ علوی",
+    originalName: "Bozorg Alavi",
+    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400",
+    bio: "نویسنده رئالیست و روشنفکر برجسته ایرانی، صاحب اثر ماندگار چشم‌هایش.",
+    booksCount: 9,
+    born: "۱۲۸۲ - تهران",
+  },
+  {
+    id: "antoine-de-saint-exupery",
+    name: "آنتوان دو سنت‌اگزوپری",
+    originalName: "Antoine de Saint-Exupéry",
+    avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400",
+    bio: "خلبان و ادیب شاعرپیشه‌ی فرانسوی، راوی فلسفی و دلنشین شازده کوچولو.",
+    booksCount: 7,
+    born: "۱۹۰۰ - لیون",
+  },
+  {
+    id: "george-orwell",
+    name: "جورج اورول",
+    originalName: "George Orwell",
+    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400",
+    bio: "نویسنده، روزنامه‌نگار و منتقد سرشناس بریتانیایی، خالق ۱۹۸۴ و قلعه حیوانات.",
+    booksCount: 11,
+    born: "۱۹۰۳ - انگلستان",
+  },
+];
